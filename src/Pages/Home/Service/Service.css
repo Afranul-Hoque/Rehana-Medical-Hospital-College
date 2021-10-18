@@ -1,0 +1,29 @@
+.service-img img{
+    height:250px;
+}
+.service-name{
+    color:rgb(41, 28, 235);
+    font-weight: bold;
+    font-size:20px;
+}
+.card-description{
+    background-color: rgb(226, 233, 231);
+    height: 600px;
+}
+.details-button{
+    padding:5px 20px;
+    color:#fff;
+    background-color:rgb(153, 145, 145);
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.details-button:hover{
+    color:black;
+    background-color:rgb(190, 174, 174);
+
+}
+.specialist-name{
+    font-weight: bold;
+    font-size:20px;
+}
