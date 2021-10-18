@@ -1,0 +1,23 @@
+.banner-img{
+    height:550px;
+    
+}
+.banner-section{
+    background: rgba(133, 122, 122);
+}
+.banner-section img{
+    opacity:0.8;
+}
+
+.banner-description{
+    color:#fff;
+    padding-bottom:70px;
+    
+}
+.banner-description h5{
+    font-size: 35px;
+    font-weight: bold;
+}
+.banner-description p{
+    font-size: 20px;
+}
