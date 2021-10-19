@@ -1,9 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import useAuth from '../../Hook/useAuth';
 import hospital from '../../Images/Banner/img4.jpg';
 import './Login.css'
 
 const Login = () => {
+    const { googleSignIn } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/home'
+
+    const handleGoogleLogin = () => {
+        googleSignIn()
+            .then(result => {
+                history.push(redirect_uri)
+            })
+    }
+
     return (
         <div className="container row mt-5">
             <div className=" col-md-8">
@@ -22,7 +35,7 @@ const Login = () => {
                     <p>New member? <Link to="/register">Create Account</Link> here</p>
                     <div>-------Or----------</div>
 
-                    <button type="button" class=" details-button mt-2 py-2"> Google Sign In</button>
+                    <button onClick={handleGoogleLogin} type="button" class=" details-button mt-2 py-2"> Google Sign In</button>
                 </div>
             </div>
 

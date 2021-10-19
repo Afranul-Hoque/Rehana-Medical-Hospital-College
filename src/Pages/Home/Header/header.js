@@ -1,28 +1,14 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Header.css'
+import useAuth from '../../../Hook/useAuth';
+import './Header.css';
 
-const header = () => {
+const Header = () => {
+
+    // const { user, logOut } = useAuth();
+    const { user, logOut } = useAuth();
     return (
         <div className="header-description">
-            {/* <Navbar bg="light" expand="lg">
-                <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link as {link} href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
-
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar> */}
-
-
             <nav className="navbar navbar-expand-lg  bg-dark nav-section">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/home">Rehana Medical College Hospital</Link>
@@ -31,21 +17,27 @@ const header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link to="/home" className="nav-link active">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/services" className="nav-link active">Services</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active">Students</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link active">Publications</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/login" className="nav-link active">Login</Link>
-                            </li>
+
+                            <Link to="/home" className="nav-link active">Home</Link>
+
+
+                            <Link to="/services" className="nav-link active">Services</Link>
+
+
+                            <Link className="nav-link active">Students</Link>
+
+                            <Link className="nav-link active">Publications</Link>
+                            {
+                                user.email && <span><Link to="/home" className="nav-link active">{user.displayName}</Link></span>
+                            }
+
+                            {
+                                user.email ?
+                                    <Link onClick={logOut} to="/home" className="nav-link active">Logout</Link>
+                                    :
+                                    <Link to="/login" className="nav-link active">login</Link>
+                            }
+
 
                         </ul>
 
@@ -56,4 +48,4 @@ const header = () => {
     );
 };
 
-export default header;
+export default Header;

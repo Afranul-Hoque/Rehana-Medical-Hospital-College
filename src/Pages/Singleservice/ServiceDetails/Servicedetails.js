@@ -5,14 +5,18 @@ const Servicedetails = () => {
     const { serviceId } = useParams();
     const { details, setDetals } = useState([]);
     useEffect(() => {
-        fetch('/data.json')
+        fetch('./data.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setDetals(data))
     }, [])
+
 
     // useEffect(() => {
     //     const showDetails = details.find(detail => detail.id === serviceId)
-    // }, [details])
+    //     console.log(showDetails);
+    //     // const show = showDetails[0];
+    //     // console.log(show);
+    // }, [])
 
     return (
         <div>
