@@ -20,7 +20,7 @@ const Services = () => {
             </div>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
-                    services.slice(0, 6).map(service => <Service
+                    services.map(service => <Service
 
                         key={service.key}
                         service={service}

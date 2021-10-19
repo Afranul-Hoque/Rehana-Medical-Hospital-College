@@ -32,10 +32,10 @@ const header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active">Home</Link>
+                                <Link to="/home" className="nav-link active">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active">Services</Link>
+                                <Link to="/services" className="nav-link active">Services</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active">Students</Link>
@@ -44,7 +44,7 @@ const header = () => {
                                 <Link className="nav-link active">Publications</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active">Login</Link>
+                                <Link to="/login" className="nav-link active">Login</Link>
                             </li>
 
                         </ul>
