@@ -3,18 +3,18 @@ import Home from './Pages/Home/Home/Home';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import Pagenotfound from './Pages/Pagenotfound/Pagenotfound';
 import Servicedetails from './Pages/Singleservice/ServiceDetails/Servicedetails';
-import Login from './Pages/Login/Login';
-import Register from './Pages/Register/Register';
 import Authprovider from './Context/Authprovider';
 import PrivateRoute from './Pages/Privateroute/PrivateRoute';
 import Allservices from './Pages/AllServices/Allservices';
+import Doctor from './Pages/Doctor/Doctor';
+import Loginpage from './Pages/Loginpage/Loginpage';
+import Registerpage from './Pages/Registerpage/Registerpage';
 
 function App() {
   return (
     <div >
       <Authprovider>
         <Router>
-          {/* <Header></Header> */}
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -22,18 +22,21 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/allservices">
+            <PrivateRoute path="/allservices">
               <Allservices></Allservices>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/Servicedetails/:serviceId">
               <Servicedetails></Servicedetails>
             </PrivateRoute>
 
             <Route path="/login">
-              <Login></Login>
+              <Loginpage></Loginpage>
             </Route>
+            <PrivateRoute path="/doctor">
+              <Doctor></Doctor>
+            </PrivateRoute>
             <Route path="/register">
-              <Register></Register>
+              <Registerpage></Registerpage>
             </Route>
             <Route path="*">
               <Pagenotfound></Pagenotfound>

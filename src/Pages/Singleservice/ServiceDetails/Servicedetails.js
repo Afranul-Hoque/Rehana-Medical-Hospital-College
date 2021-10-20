@@ -19,6 +19,11 @@ const Servicedetails = () => {
 
     return (
         <div>
+            <div>
+                <h2 className="Service-heading pb-3">Welcome to Rehana Medical College Hospital
+                </h2>
+                <h4 className="services">Show Services Details</h4>
+            </div>
             <h3>hi service:{serviceId}</h3>
 
         </div>

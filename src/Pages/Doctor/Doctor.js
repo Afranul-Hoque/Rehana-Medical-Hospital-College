@@ -1,18 +1,16 @@
 import React from 'react';
-import Ambulance from '../Home/Ambulance/Ambulance';
+import Doctors from '../Doctors/Doctors';
 import Footer from '../Home/Footer/Footer';
 import Header from '../Home/Header/Header';
-import Services from '../Home/Services/Services';
 
-const Allservices = () => {
+const Doctor = () => {
     return (
         <div>
             <Header></Header>
-            <Services></Services>
-            <Ambulance></Ambulance>
+            <Doctors></Doctors>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Allservices;
+export default Doctor;

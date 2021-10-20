@@ -1,18 +1,16 @@
 import React from 'react';
-import Ambulance from '../Home/Ambulance/Ambulance';
 import Footer from '../Home/Footer/Footer';
 import Header from '../Home/Header/Header';
-import Services from '../Home/Services/Services';
+import Register from '../Register/Register';
 
-const Allservices = () => {
+const Registerpage = () => {
     return (
         <div>
             <Header></Header>
-            <Services></Services>
-            <Ambulance></Ambulance>
+            <Register></Register>
             <Footer></Footer>
         </div>
     );
 };
 
-export default Allservices;
+export default Registerpage;

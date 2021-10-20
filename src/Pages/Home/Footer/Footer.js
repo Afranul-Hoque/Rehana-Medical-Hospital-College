@@ -17,11 +17,11 @@ const Footer = () => {
                         <h4 className="pt-4 mb-3 text-uppercase">Rehana-MCH</h4>
                         <div >
 
-                            <span><i class="fas fa-map-marker-alt pe-2"></i>  Hospital Road, Maijdee, Noakhali-3800.</span>
+                            <span><i className="fas fa-map-marker-alt pe-2"></i>  Hospital Road, Maijdee, Noakhali-3800.</span>
                             <br />
-                            <span><i class="fas fa-envelope pe-2 mt-3"></i>Ahrafi4554@gmail.com</span>
+                            <span><i className="fas fa-envelope pe-2 mt-3"></i>Ahrafi4554@gmail.com</span>
                             <br />
-                            <span><i class="fas fa-phone-alt pe-2 mt-3"></i>019032xxx, 018723xxx , 0173532xxx</span>
+                            <span><i className="fas fa-phone-alt pe-2 mt-3"></i>019032xxx, 018723xxx , 0173532xxx</span>
 
                         </div>
                     </div>
@@ -58,12 +58,12 @@ const Footer = () => {
                             <h3 className="footer-titles ">Medical College</h3>
                         </div>
                         <div className="ms-4 mt-5 pt-4">
-                            <span><i class="fas fa-map-marker-alt pe-2 mt-3"></i>  Housing Road, Maijdee, Noakhali-3800.</span>
+                            <span><i className="fas fa-map-marker-alt pe-2 mt-3"></i>  Housing Road, Maijdee, Noakhali-3800.</span>
 
                             <br />
-                            <span><i class="fas fa-users pe-2 mt-3"></i> 5000 Students.</span>
+                            <span><i className="fas fa-users pe-2 mt-3"></i> 5000 Students.</span>
                             <br />
-                            <span><i class="fas fa-notes-medical pe-2 mt-3"></i> 14 Departments</span>
+                            <span><i className="fas fa-notes-medical pe-2 mt-3"></i> 14 Departments</span>
                         </div>
                     </div>
 
