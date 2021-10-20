@@ -1,3 +1,4 @@
+
 .mobile-number{
     text-transform: uppercase;
     font-size: 30px;
@@ -10,6 +11,8 @@
 .number-section{
     background-color:rgb(153, 145, 145);
 border-radius: 10px;
+margin-left: 10px;
+margin-right: 10px;
 }
 .ambulance-img img{
     height:300px;

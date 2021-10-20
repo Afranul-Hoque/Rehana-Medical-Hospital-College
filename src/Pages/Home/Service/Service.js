@@ -16,7 +16,7 @@ const Service = (props) => {
                     <h6>Contact: {Number}</h6>
 
 
-                    <Link to={`/Servicedetails/${id}`}>
+                    <Link to={`/Singlepageservice/${id}`}>
                         <button type="button" class=" details-button mt-2 py-2"> Details More</button>
                     </Link>
 

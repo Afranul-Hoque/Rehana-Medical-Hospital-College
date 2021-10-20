@@ -3,10 +3,11 @@ import doctors1 from '../../Images/Doctors/doctors1.jpg';
 import doctors2 from '../../Images/Doctors/doctors2.jpg';
 import doctors3 from '../../Images/Doctors/doctors3.jpg';
 import doctors4 from '../../Images/Doctors/doctors4.jpg';
+import './Doctors.css'
 
 const Doctors = () => {
     return (
-        <div className="mx-4 mt-5 pt-5">
+        <div className="mx-4 mt-5 pt-5 doctor-section">
             <div className="mb-4 pb-3 text-center">
                 <h3>Our Specialist Doctors</h3>
             </div>

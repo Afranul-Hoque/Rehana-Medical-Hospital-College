@@ -18,13 +18,13 @@ const Servicedetails = () => {
     // }, [])
 
     return (
-        <div>
+        <div className="text-center my-5">
             <div>
                 <h2 className="Service-heading pb-3">Welcome to Rehana Medical College Hospital
                 </h2>
-                <h4 className="services">Show Services Details</h4>
+                <h4 className="services mb-3">Show Services Details</h4>
             </div>
-            <h3>hi service:{serviceId}</h3>
+            <h3>Service Number:{serviceId}</h3>
 
         </div>
     );

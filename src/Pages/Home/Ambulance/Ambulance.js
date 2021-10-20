@@ -3,12 +3,12 @@ import Ambulance1 from '../../../Images/ambulance/ambulance1.jpg';
 import './Ambulance.css'
 const Ambulance = () => {
     return (
-        <div className="container ">
+        <div className="container ambulance-section">
             <div className="my-5 text-center">
                 <h3>Emergency Ambulance Service</h3>
             </div>
             <div className="row mt-4 pt-3">
-                <div className="col-md-6 ambulance-img">
+                <div className="col-md-5 ambulance-img">
                     <img src={Ambulance1} alt="" />
                 </div>
                 <div className="col-md-6 number-section">

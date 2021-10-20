@@ -25,7 +25,7 @@ const Header = () => {
 
                             <Link to="/doctor" className="nav-link active">Doctors</Link>
 
-                            <Link className="nav-link active">Publications</Link>
+
                             {
                                 user.email && <span><Link to="/home" className="nav-link active">{user.displayName}</Link></span>
                             }

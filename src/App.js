@@ -9,6 +9,7 @@ import Allservices from './Pages/AllServices/Allservices';
 import Doctor from './Pages/Doctor/Doctor';
 import Loginpage from './Pages/Loginpage/Loginpage';
 import Registerpage from './Pages/Registerpage/Registerpage';
+import Singlepageservice from './Pages/Singleservice/Singleserviceshow/Singlepageservice';
 
 function App() {
   return (
@@ -25,8 +26,8 @@ function App() {
             <PrivateRoute path="/allservices">
               <Allservices></Allservices>
             </PrivateRoute>
-            <PrivateRoute path="/Servicedetails/:serviceId">
-              <Servicedetails></Servicedetails>
+            <PrivateRoute path="/Singlepageservice/:serviceId">
+              <Singlepageservice></Singlepageservice>
             </PrivateRoute>
 
             <Route path="/login">

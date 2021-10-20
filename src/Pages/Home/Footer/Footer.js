@@ -17,7 +17,7 @@ const Footer = () => {
                         <h4 className="pt-4 mb-3 text-uppercase">Rehana-MCH</h4>
                         <div >
 
-                            <span><i className="fas fa-map-marker-alt pe-2"></i>  Hospital Road, Maijdee, Noakhali-3800.</span>
+                            <span><i className="fas fa-map-marker-alt pe-2"></i>  Hospital Road, Maijdee, Noakhali</span>
                             <br />
                             <span><i className="fas fa-envelope pe-2 mt-3"></i>Ahrafi4554@gmail.com</span>
                             <br />
@@ -44,7 +44,9 @@ const Footer = () => {
 
                             <Link className="nav-items" to="/services"><li>Services</li></Link>
 
-                            <Link className="nav-items" to="/gallery"><li>Students</li></Link>
+                            <Link className="nav-items" to="/doctor"><li>Doctors</li></Link>
+
+
 
                         </ul>
                     </div>
@@ -58,7 +60,7 @@ const Footer = () => {
                             <h3 className="footer-titles ">Medical College</h3>
                         </div>
                         <div className="ms-4 mt-5 pt-4">
-                            <span><i className="fas fa-map-marker-alt pe-2 mt-3"></i>  Housing Road, Maijdee, Noakhali-3800.</span>
+                            <span><i className="fas fa-map-marker-alt pe-2 mt-3"></i>  Housing Road, Maijdee, Noakhali</span>
 
                             <br />
                             <span><i className="fas fa-users pe-2 mt-3"></i> 5000 Students.</span>
