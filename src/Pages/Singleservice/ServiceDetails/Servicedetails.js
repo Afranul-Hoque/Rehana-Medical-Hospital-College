@@ -12,15 +12,15 @@ const Servicedetails = () => {
 
 
     // useEffect(() => {
-    //     const showDetails = details.find(detail => detail.id === serviceId)
+    //     const showDetails = details.find(detail => detail.id === +serviceId)
     //     console.log(showDetails);
-    //     // const show = showDetails[0];
-    //     // console.log(show);
+
     // }, [])
 
     return (
         <div>
             <h3>hi service:{serviceId}</h3>
+
         </div>
     );
 };

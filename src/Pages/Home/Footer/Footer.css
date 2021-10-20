@@ -1,0 +1,22 @@
+.footer-container{
+    background-color: rgb(114, 112, 112);
+    margin-top:50px;
+}
+.footer-titles{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:20px;
+}
+.footer-link a{
+    text-decoration: none;
+    color:#fff;
+
+}
+.nav-items li {
+    color:#fff;
+    list-style-type: none;
+margin-left: 10px;
+font-size:18px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
