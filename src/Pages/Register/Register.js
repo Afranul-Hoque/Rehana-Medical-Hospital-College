@@ -5,10 +5,12 @@ import hospital from '../../Images/Banner/img4.jpg'
 import useAuth from '../../Hook/useAuth';
 
 const Register = () => {
-    const { googleSignIn } = useAuth();
+    const { user, googleSignIn, handleEmail, handlePassword, handleRegistrationForm, toggleLogin, isLogin } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
+
+
 
     const handleGoogleLogin = () => {
         googleSignIn()
@@ -16,18 +18,6 @@ const Register = () => {
                 history.push(redirect_uri)
             })
     }
-
-    const handleEmail = e => {
-
-    }
-    const handlePassword = e => {
-
-    }
-
-    const handleRegistrationForm = e => {
-        e.preventDefault();
-    }
-
     return (
 
         <div className="container row mt-5">
@@ -40,17 +30,27 @@ const Register = () => {
 
                     <form onSubmit={handleRegistrationForm}>
                         <h5 className="mt-3">Your Name</h5>
-                        <input className="login-input " type="name" name="" id="" placeholder="Enter your name" />
+                        <input className="login-input " type="name" name="" id="" placeholder="Enter your name" required />
                         <h5 className="mt-3">Email</h5>
-                        <input onBlur={handleEmail} className="login-input " type="email" name="" id="" placeholder="Enter your email" />
+                        <input onBlur={handleEmail} className="login-input " type="email" name="" id="" placeholder="Enter your email" required />
                         <br />
                         <h5 className="mt-3">Password</h5>
-                        <input onBlur={handlePassword} className="login-input " type="password" name="" id="" placeholder="Enter your password" />
+                        <input onBlur={handlePassword} className="login-input " type="password" name="" id="" placeholder="Enter your password" required />
                         <br />
                         <h5 className="mt-3">Re-enter Password</h5>
-                        <input className="login-input " type="password" name="" id="" placeholder="Re-enter your password" />
+                        <input className="login-input " type="password" name="" id="" placeholder="Re-enter your password" required />
                         <br />
                         <input className="submit-button my-4 " type="submit" value="Create Account" />
+
+
+
+                        <div className="form-check">
+                            <Link to="/login"><input onChange={toggleLogin} type="checkbox" id="gridCheck1" className="form-check-input" /></Link>
+
+
+
+                            <label className="form-check-label" htmlFor="gridCheck1">Already Registered?</label>
+                        </div>
                     </form>
                     <p>Already have an account? <Link to="/login">Login</Link> here</p>
                     <div>-------Or----------</div>

@@ -5,7 +5,7 @@ import hospital from '../../Images/Banner/img4.jpg';
 import './Login.css'
 
 const Login = () => {
-    const { googleSignIn } = useAuth();
+    const { googleSignIn, handleEmail, handlePassword, handleLoginEmailPass } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
@@ -17,6 +17,8 @@ const Login = () => {
             })
     }
 
+
+
     return (
         <div className="container row mt-5">
             <div className=" col-md-8">
@@ -24,14 +26,17 @@ const Login = () => {
                 <div className="login-section">
                     <h2>Welcome! Please Login to continue</h2>
 
-                    <form onSubmit="">
+                    <form onSubmit={handleLoginEmailPass}>
 
-                        <input className="login-input mt-3" type="email" name="" id="" placeholder="Enter your email" />
+                        <input onBlur={handleEmail} className="login-input mt-3" type="email" name="" id="" placeholder="Enter your email" required />
                         <br />
-                        <input className="login-input mt-3" type="password" name="" id="" placeholder="Enter your password" />
+                        <input onBlur={handlePassword} className="login-input mt-3" type="password" name="" id="" placeholder="Enter your password in 6 characters" required />
                         <br />
                         <input className="submit-button my-4 " type="submit" value="Login" />
+
+
                     </form>
+
                     <p>New member? <Link to="/register">Create Account</Link> here</p>
                     <div>-------Or----------</div>
 
