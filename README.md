@@ -12,6 +12,9 @@ It is an Healthcare website. In this website we added hospital and medical colle
 * A user can see all medical services and choose which he needs.
 * Specialist doctors' details and appointment times are shown here.Emergency numbers and ambulance services are in here.
 
+###`Technology`
+  React, Bootstrap, Firebase, Heroku, Express, Node js
+
 
 ### `Home Page`
  Therer are Five section included banner and footer section. There Header section we make a navber for click and going to page .
