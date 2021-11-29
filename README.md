@@ -12,7 +12,7 @@ It is an Healthcare website. In this website we added hospital and medical colle
 * A user can see all medical services and choose which he needs.
 * Specialist doctors' details and appointment times are shown here.Emergency numbers and ambulance services are in here.
 
-###`Technology`
+###`Technology `
   React, Bootstrap, Firebase, Heroku, Express, Node js
 
 
